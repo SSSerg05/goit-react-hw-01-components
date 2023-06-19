@@ -1,5 +1,6 @@
 import "../css/profile.css"
 
+
 export const Profile = (props) => {
   const {username, tag, location, stats} = props;
 
@@ -19,15 +20,15 @@ export const Profile = (props) => {
       <ul class="stats">
         <li>
           <span class="label">Followers </span>
-          <span class="quantity">{stats.followers}</span>
+          <span class="quantity">{new Intl.NumberFormat('en-IN').format(stats.followers)}</span>
         </li>
         <li>
           <span class="label">Views </span>
-          <span class="quantity">{stats.views}</span>
+          <span class="quantity">{new Intl.NumberFormat('en-IN').format(stats.views)}</span>
         </li>
         <li>
           <span class="label">Likes </span>
-          <span class="quantity">{stats.likes}</span>
+          <span class="quantity">{new Intl.NumberFormat('en-IN').format(stats.likes)}</span>
         </li>
       </ul>
     </div>
