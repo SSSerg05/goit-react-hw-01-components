@@ -1,3 +1,6 @@
+import { Profile } from "./Profile";
+import User from '../data/user.json';
+
 export const App = () => {
   return (
     <div
@@ -10,7 +13,15 @@ export const App = () => {
         color: '#010101'
       }}
     >
-      React homework template
+      <Profile
+        username={User.username}
+        tag={User.tag}
+        location={User.location}
+        avatar={User.avatar}
+        stats={User.stats}
+      />
+
+
     </div>
   );
 };
