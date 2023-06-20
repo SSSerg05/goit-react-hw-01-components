@@ -1,14 +1,6 @@
 import PropTypes from 'prop-types'; // ES6
 import css from './FriendList.module.css'
-
-const friendsShow = (friends) =>
-  friends.map(({ id, isOnline, name, avatar }) => 
-    <li className={css.item} key={id}>
-      <span className={css.status} style={ {backgroundColor: isOnline ? 'green':'red'} }></span>
-      <img className={css.avatar} src={ avatar } alt="User avatar" width="48" />
-      <p className={css.name}>{ name }</p>
-    </li>)
-
+import { friendsShow } from './Utils/friendsShow'
 
 export const FriendList = ({ friends } ) => {
 

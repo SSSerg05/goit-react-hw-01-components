@@ -1,20 +1,6 @@
 import PropTypes from 'prop-types'; // ES6
 import css from "./TransactionHistory.module.css";
-
-// id — уникальный идентификатор транзакции
-// type — тип транзакции
-// amount - сумма транзакции
-// currency - тип валюты
-const transactionShow = (items) =>
-  items.map(({ id, type, amount, currency }) =>
-    (
-      <tr key={id} >
-        <td>{type}</td>
-        <td>{amount}</td>
-        <td>{currency}</td>
-      </tr>
-    )
-  );
+import { transactionShow } from './Utils/transactionShow'
 
 export const TransactionHistory = ({ items }) => {
 
