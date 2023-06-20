@@ -7,10 +7,10 @@ function getRandomHexColor() {
 }
 
 const listShow = (stats) => stats.map(({ id, label, percentage }) => (
-    <li class="item" key={id} style={{ backgroundColor: getRandomHexColor()}
+    <li className="item" key={id} style={{ backgroundColor: getRandomHexColor()}
 }>
-      <span class="label-stat">{label}</span>
-      <span class="percentage">{percentage + '%'}</span>
+      <span className="label-stat">{label}</span>
+      <span className="percentage">{percentage + '%'}</span>
     </li>
   ));
 
@@ -18,7 +18,7 @@ const titleShow = (title) => {
   if (!title) {
     return
   }
-  return (<h2 class="title">{title}</h2>)
+  return (<h2 className="title">{title}</h2>)
 }
 
 
@@ -26,11 +26,11 @@ export const Statistics = (props) => {
   const { title, stats } = props;
 
   return (
-    <section class="statistics">
+    <section className="statistics">
       
       { titleShow(title) }
 
-     <ul class="stat-list">
+     <ul className="stat-list">
         { listShow(stats) }
      </ul>
     </section>

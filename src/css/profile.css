@@ -67,6 +67,7 @@ img {
   /* top-left | top-right | bottom-right | bottom-left */
   border-radius: 0 0 10px 10px;
 }
+
 .stats li {
   width: 100%;
  
@@ -96,7 +97,7 @@ img {
   color: darkgray;
 }
 
-.quantity{
+.quantity {
   display: block;
   
   padding-top: 4px;

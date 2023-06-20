@@ -18,8 +18,8 @@ const transactionShow = (items) =>
 export const TransactionHistory = ({ items }) => {
 
   return (
-    <section class="transactions">
-      <table class="transaction-history">
+    <section className="transactions">
+      <table className="transaction-history">
         <thead>
           <tr>
             <th>Type</th>
