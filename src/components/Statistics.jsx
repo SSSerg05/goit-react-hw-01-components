@@ -7,7 +7,7 @@ function getRandomHexColor() {
 }
 
 const listShow = (stats) => stats.map(({ id, label, percentage }) => (
-    <li class="item" id={id} style={{ backgroundColor: getRandomHexColor()}
+    <li class="item" key={id} style={{ backgroundColor: getRandomHexColor()}
 }>
       <span class="label-stat">{label}</span>
       <span class="percentage">{percentage + '%'}</span>

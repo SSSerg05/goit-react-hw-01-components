@@ -11,7 +11,7 @@ const isOnlineShow = (isOnline) => {
 
 const friendsShow = (friends) =>
   friends.map(({ id, isOnline, name, avatar }) => 
-      <li class="item-friends" id={id}>
+      <li class="item-friends" key={id}>
           { isOnlineShow(isOnline) }
           <img class="avatar" src={ avatar } alt="User avatar" width="48" />
           <p class="name">{ name }</p>

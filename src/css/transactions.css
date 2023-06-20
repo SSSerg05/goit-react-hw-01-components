@@ -31,7 +31,6 @@
 .transaction-history th {
   min-width: 100px;
   padding: 8px;
-   /* border: 1px solid darkgray;  */
 
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
@@ -39,8 +38,10 @@
 
 .transaction-history tbody td {
   padding: 8px;
+  
   border-bottom: 1px solid darkgray;
   border-right: 1px solid darkgray;
+
   transition: border-bottom 150ms linear, 
               font-weight 150ms linear;
 }
@@ -58,7 +59,6 @@
 }
 
 .transaction-history tbody tr:hover td {
-  /* background: #D1C7BF; */
   border-bottom: 1px solid black;
   font-weight: 700;
 }

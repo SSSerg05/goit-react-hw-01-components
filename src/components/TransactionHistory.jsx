@@ -7,7 +7,7 @@ import "../css/transactions.css";
 const transactionShow = (items) =>
   items.map(({ id, type, amount, currency }) =>
     (
-      <tr id={id} >
+      <tr key={id} >
         <td>{type}</td>
         <td>{amount}</td>
         <td>{currency}</td>
