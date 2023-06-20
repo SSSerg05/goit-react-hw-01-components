@@ -74,7 +74,7 @@ img {
   padding-top: 20px;
   padding-bottom: 20px;
   
-  border: 1px solid #777;
+  border: 1px solid darkgray;
 }
 
 .stats li:last-child {
