@@ -3,14 +3,14 @@ import css from './Profile.module.css';
 
 
 export const Profile = (props) => {
-  const {username, tag, location, stats} = props;
+  const {username, tag, location, avatar, stats} = props;
 
   return (
     <section className={css.userprofile}>
       <div className={css.profile}>
         <div className={css.description}>
           <img
-            src="https://cdn-icons-png.flaticon.com/512/1077/1077012.png"
+            src={avatar}
             alt="User avatar"
             className={css.avatar}
           />
@@ -40,6 +40,7 @@ export const Profile = (props) => {
 
 Profile.propTypes = {
   username: PropTypes.string.isRequired,
+  avatar: PropTypes.string.isRequired,
   tag: PropTypes.string.isRequired,
   location: PropTypes.string.isRequired,
   stats: PropTypes.shape({
