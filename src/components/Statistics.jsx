@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types'; // ES6
 import "../css/statistics.css";
 
 function getRandomHexColor() {
@@ -35,4 +36,13 @@ export const Statistics = (props) => {
      </ul>
     </section>
   );
+}
+
+Statistics.propTypes = {
+  title: PropTypes.string,
+  stats: PropTypes.arrayOf(PropTypes.shape({
+    id: PropTypes.string,
+    label: PropTypes.string,
+    percentage: PropTypes.number,
+  })),
 }

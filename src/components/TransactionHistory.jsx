@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types'; // ES6
 import "../css/transactions.css";
 
 // id — уникальный идентификатор транзакции
@@ -34,4 +35,13 @@ export const TransactionHistory = ({ items }) => {
       </table>
     </section>
   );
+}
+
+TransactionHistory.propTypes = {
+  items: PropTypes.arrayOf(PropTypes.shape({
+    id: PropTypes.string,
+    type: PropTypes.string,
+    amount: PropTypes.string,
+    currency: PropTypes.string,
+  })),
 }

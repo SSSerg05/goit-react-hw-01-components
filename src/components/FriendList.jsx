@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types'; // ES6
 import "../css/friendList.css"
 
 const isOnlineShow = (isOnline) => {
@@ -27,4 +28,13 @@ export const FriendList = ({ friends } ) => {
       </ul>
     </section>   
   );
+}
+
+FriendList.propTypes = {
+  friends: PropTypes.arrayOf(PropTypes.shape({
+    id: PropTypes.number,
+    isOnline: PropTypes.bool,
+    name: PropTypes.string,
+    avatar : PropTypes.string,
+  })),
 }
