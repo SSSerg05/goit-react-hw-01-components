@@ -1,0 +1,43 @@
+.friends{
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.list-friends{
+  display: block;
+}
+
+.item-friends{
+  margin: 10px;
+  border: 1px solid black;
+  display: flex;
+  flex-wrap: nowrap;
+  align-content: center;
+  align-items: center;
+}
+
+.status{
+  margin: 4px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+}
+
+.avatar {
+  /* display: block;
+  width: 100%;
+  height: auto; */
+  width: 48px;
+  height: 48px;
+  padding: 8px;
+}
+
+.name {
+  margin: 0;
+  padding-left: 8px;
+  padding-right: 8px;
+  text-align: center;
+
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+}

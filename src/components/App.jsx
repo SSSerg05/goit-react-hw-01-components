@@ -7,8 +7,8 @@ import { Statistics } from "./Statistics";
 import Data from '../data/data.json';
 
 // 3-task. Data + Statistics
-
-
+import { FriendList } from "./FriendList"
+import Friends from '../data/friends.json';
 
 export const App = () => {
   return (
@@ -35,6 +35,8 @@ export const App = () => {
       {/* 2-task */}
       <Statistics title="Upload stats" stats={Data} />
       <Statistics stats={Data} />
+
+      <FriendList friends={Friends} />
 
     </div>
   );
