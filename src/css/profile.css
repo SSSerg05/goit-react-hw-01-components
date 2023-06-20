@@ -1,6 +1,7 @@
 .profile {
-  position: relative;
   width: 300px;
+  min-width: 300px;
+
   border: 1px solid black;
   border-radius: 10px;
   background-color: antiquewhite;
@@ -60,9 +61,11 @@ img {
   border-radius: 0 0 10px 10px;
 }
 .stats li {
+  width: 100%;
+ 
   padding-top: 20px;
   padding-bottom: 20px;
-  width: 100%;
+  
   border: 1px solid #777;
 }
 

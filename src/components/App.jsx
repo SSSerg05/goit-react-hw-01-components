@@ -1,8 +1,14 @@
+// 1-task. User + Profile
 import { Profile } from "./Profile";
 import User from '../data/user.json';
 
+// 2-task. Data + Statistics
 import { Statistics } from "./Statistics";
-import data from '../data/data.json';
+import Data from '../data/data.json';
+
+// 3-task. Data + Statistics
+
+
 
 export const App = () => {
   return (
@@ -10,12 +16,14 @@ export const App = () => {
       style={{
         height: '100vh',
         display: 'flex',
+        flexWrap: 'wrap',
         justifyContent: 'center',
         alignItems: 'center',
         fontSize: 40,
         color: '#010101'
       }}
     >
+      {/* 1-task */}
       <Profile
         username={User.username}
         tag={User.tag}
@@ -24,8 +32,9 @@ export const App = () => {
         stats={User.stats}
       />
 
-      <Statistics title="Upload stats" stats={data} />
-      <Statistics stats={data} />
+      {/* 2-task */}
+      <Statistics title="Upload stats" stats={Data} />
+      <Statistics stats={Data} />
 
     </div>
   );

@@ -1,28 +1,30 @@
 import "../css/statistics.css";
 
+function getRandomHexColor() {
+  return `#${Math.floor(Math.random() * 16777215)
+    .toString(16)
+    .padStart(6, 0)}`;
+}
+
+const List = (stats) => stats.map(({ id, label, percentage }) => (
+    <li class="item" id={id} style={{ backgroundColor: getRandomHexColor()}
+}>
+      <span class="label-stat">{label}</span>
+      <span class="percentage">{percentage + '%'}</span>
+    </li>
+  ));
+
 export const Statistics = (props) => {
-  const {title, stats} = props
+  const { title, stats } = props;
+
+
+
   return (
     <section class="statistics">
      <h2 class="title">{title}</h2>
 
      <ul class="stat-list">
-       <li class="item">
-         <span class="label">{stats.label}</span>
-         <span class="percentage">{stats.percentage}</span>
-       </li>
-       <li class="item">
-         <span class="label">.mp3</span>
-         <span class="percentage">14%</span>
-       </li>
-       <li class="item">
-         <span class="label">.pdf</span>
-         <span class="percentage">41%</span>
-       </li>
-       <li class="item">
-         <span class="label">.mp4</span>
-         <span class="percentage">12%</span>
-       </li>
+        { List(stats) }
      </ul>
     </section>
   );
