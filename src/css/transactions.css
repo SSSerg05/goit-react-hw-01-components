@@ -23,6 +23,7 @@
 
 .transaction-history thead {
   color: white;
+  text-shadow: 0 1px 1px #2D2020;
   background-color: rgb(129, 127, 255);
   padding: 10px;
 }
@@ -30,12 +31,22 @@
 .transaction-history th {
   min-width: 100px;
   padding: 8px;
-  border: 1px solid rgb(90, 185, 154);
+   /* border: 1px solid darkgray;  */
+
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
 
 .transaction-history tbody td {
   padding: 8px;
-  border: 1px solid darkgray;
+  border-bottom: 1px solid darkgray;
+  border-right: 1px solid darkgray;
+  transition: border-bottom 150ms linear, 
+              font-weight 150ms linear;
+}
+
+.transaction-history tbody td:last-child {
+  border-right: none;
 }
 
 .transaction-history tbody tr:nth-child(odd) {
@@ -44,4 +55,10 @@
 
 .transaction-history tbody tr:nth-child(even) {
   background-color: lightgrey;
+}
+
+.transaction-history tbody tr:hover td {
+  /* background: #D1C7BF; */
+  border-bottom: 1px solid black;
+  font-weight: 700;
 }
