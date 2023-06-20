@@ -22,7 +22,8 @@
 }
 
 .transaction-history thead {
-  background-color: aquamarine;
+  color: white;
+  background-color: rgb(129, 127, 255);
   padding: 10px;
 }
 
