@@ -1,18 +1,24 @@
 .friends{
+  display: block;
   margin-top: 20px;
   margin-bottom: 20px;
 }
 .list-friends{
   display: block;
+  padding-left: 0;
+  margin: 0;
+  list-style: none;
 }
 
 .item-friends{
-  margin: 10px;
-  border: 1px solid black;
   display: flex;
   flex-wrap: nowrap;
   align-content: center;
   align-items: center;
+  
+  margin: 0 10px 10px 10px;
+  border: 1px solid black;
+  box-shadow: 0 10px 10px -5px rgba(0, 0, 0, 0.3);
 }
 
 .status{
@@ -28,7 +34,9 @@
   height: auto; */
   width: 48px;
   height: 48px;
-  padding: 8px;
+  margin: 8px;
+  outline: 1px solid lightgray;
+  border-radius: 8px;
 }
 
 .name {

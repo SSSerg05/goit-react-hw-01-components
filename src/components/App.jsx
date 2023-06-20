@@ -14,8 +14,10 @@ export const App = () => {
   return (
     <div
       style={{
+        margin: '0 auto',
         height: '100vh',
         display: 'flex',
+        flexDirection: 'column',
         flexWrap: 'wrap',
         justifyContent: 'center',
         alignItems: 'center',
@@ -36,6 +38,7 @@ export const App = () => {
       <Statistics title="Upload stats" stats={Data} />
       <Statistics stats={Data} />
 
+      {/* 3-task */}
       <FriendList friends={Friends} />
 
     </div>

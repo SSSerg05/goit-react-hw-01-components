@@ -1,3 +1,9 @@
+.user-profile {
+  display: block;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
 .profile {
   width: 300px;
   min-width: 300px;
