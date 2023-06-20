@@ -13,7 +13,7 @@ export const Profile = (props) => {
             alt="User avatar"
             class="avatar"
           />
-          <p class="name">{username}</p>
+          <p class="name-profile">{username}</p>
           <p class="tag">{'@' + tag}</p>
           <p class="location">{location}</p>
         </div>

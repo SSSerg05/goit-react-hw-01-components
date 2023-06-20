@@ -19,10 +19,10 @@ export const App = () => {
     <div
       style={{
         margin: '0 auto',
-        height: '100vh',
+        // height: '100vh',
         display: 'flex',
         flexDirection: 'column',
-        flexWrap: 'wrap',
+        flexWrap: 'nowrap',
         justifyContent: 'center',
         alignItems: 'center',
         fontSize: 40,
@@ -46,7 +46,7 @@ export const App = () => {
       <FriendList friends={Friends} />
       
       {/* 4-task */}
-      <TransactionHistory items={Transactions} />;
+      <TransactionHistory items={Transactions} />
 
     </div>
   );
