@@ -14,14 +14,20 @@ const List = (stats) => stats.map(({ id, label, percentage }) => (
     </li>
   ));
 
+const Title = (title) => { 
+  if (!title) {
+    return
+  }
+  return (<h2 class="title">{title}</h2>)
+}
+
 export const Statistics = (props) => {
   const { title, stats } = props;
 
-
-
   return (
     <section class="statistics">
-     <h2 class="title">{title}</h2>
+      
+      {Title(title)}
 
      <ul class="stat-list">
         { List(stats) }
