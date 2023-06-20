@@ -15,25 +15,17 @@ const listShow = (stats) => stats.map(({ id, label, percentage }) => (
     </li>
   ));
 
-const titleShow = (title) => { 
-  if (!title) {
-    return
-  }
-  return (<h2 className="title">{title}</h2>)
-}
-
-
 export const Statistics = (props) => {
   const { title, stats } = props;
 
   return (
     <section className="statistics">
-      
-      { titleShow(title) }
+      { title && <h2 className="title">{title}</h2> }
+      <ul className="stat-list">
 
-     <ul className="stat-list">
         { listShow(stats) }
-     </ul>
+        
+      </ul>
     </section>
   );
 }
@@ -41,8 +33,8 @@ export const Statistics = (props) => {
 Statistics.propTypes = {
   title: PropTypes.string,
   stats: PropTypes.arrayOf(PropTypes.shape({
-    id: PropTypes.string,
-    label: PropTypes.string,
-    percentage: PropTypes.number,
+    id: PropTypes.string.isRequired,
+    label: PropTypes.string.isRequired,
+    percentage: PropTypes.number.isRequired,
   })),
 }
