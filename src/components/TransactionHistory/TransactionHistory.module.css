@@ -4,7 +4,7 @@
   margin-bottom: 20px;
 }
 
-.transaction-history {
+.transactionHistory {
   table-layout: fixed;
   /* width: 100%; */
   /* min-width: 400px; */
@@ -21,14 +21,14 @@
   box-shadow: 1px 5px 5px 0px rgba(0, 0, 0, 0.3);
 }
 
-.transaction-history thead {
+.transactionHistory thead {
   color: white;
   text-shadow: 0 1px 1px #2D2020;
   background-color: rgb(129, 127, 255);
   padding: 10px;
 }
 
-.transaction-history th {
+.transactionHistory th {
   min-width: 100px;
   padding: 8px;
 
@@ -36,7 +36,7 @@
   border-top-right-radius: 10px;
 }
 
-.transaction-history tbody td {
+.transactionHistory tbody td {
   padding: 8px;
   
   border-bottom: 1px solid darkgray;
@@ -46,19 +46,19 @@
               font-weight 150ms linear;
 }
 
-.transaction-history tbody td:last-child {
+.transactionHistory tbody td:last-child {
   border-right: none;
 }
 
-.transaction-history tbody tr:nth-child(odd) {
+.transactionHistory tbody tr:nth-child(odd) {
   background-color: white;
 }
 
-.transaction-history tbody tr:nth-child(even) {
+.transactionHistory tbody tr:nth-child(even) {
   background-color: lightgrey;
 }
 
-.transaction-history tbody tr:hover td {
+.transactionHistory tbody tr:hover td {
   border-bottom: 1px solid black;
   font-weight: 700;
 }

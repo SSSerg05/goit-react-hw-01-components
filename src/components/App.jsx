@@ -1,17 +1,17 @@
 // 1-task. User + Profile
-import { Profile } from "./Profile";
+import { Profile } from "./Profile/Profile";
 import User from '../data/user.json';
 
 // 2-task. Data + Statistics
-import { Statistics } from "./Statistics";
+import { Statistics } from "./Statistics/Statistics";
 import Data from '../data/data.json';
 
 // 3-task. Friends + FriendList
-import { FriendList } from "./FriendList"
+import { FriendList } from "./FriendList/FriendList"
 import Friends from '../data/friends.json';
 
 // 4-task. Data + Statistics
-import { TransactionHistory } from "./TransactionHistory"
+import { TransactionHistory } from "./TransactionHistory/TransactionHistory"
 import Transactions from '../data/transactions.json';
 
 export const App = () => {

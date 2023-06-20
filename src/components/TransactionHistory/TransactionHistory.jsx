@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types'; // ES6
-import "../css/transactions.css";
+import css from "./TransactionHistory.module.css";
 
 // id — уникальный идентификатор транзакции
 // type — тип транзакции
@@ -19,8 +19,8 @@ const transactionShow = (items) =>
 export const TransactionHistory = ({ items }) => {
 
   return (
-    <section className="transactions">
-      <table className="transaction-history">
+    <section className={css.transactions}>
+      <table className={css.transactionHistory}>
         <thead>
           <tr>
             <th>Type</th>
