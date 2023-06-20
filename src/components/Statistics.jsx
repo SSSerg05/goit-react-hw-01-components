@@ -21,13 +21,14 @@ const titleShow = (title) => {
   return (<h2 class="title">{title}</h2>)
 }
 
+
 export const Statistics = (props) => {
   const { title, stats } = props;
 
   return (
     <section class="statistics">
       
-      {titleShow(title)}
+      { titleShow(title) }
 
      <ul class="stat-list">
         { listShow(stats) }
