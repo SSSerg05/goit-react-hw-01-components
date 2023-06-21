@@ -3,6 +3,7 @@ import { getRandomHexColor } from '../Utils/getRandomHexColor'
 import css from '../Statistics.module.css'
 
 export const ItemStatistics = ({ id, label, percentage }) => {
+  
   return (
     <li className={css.item} key={ id } style={{ backgroundColor: getRandomHexColor() }}>
       <span className={css.label}>{label}</span>

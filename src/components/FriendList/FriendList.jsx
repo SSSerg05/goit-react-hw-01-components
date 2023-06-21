@@ -2,7 +2,6 @@ import PropTypes from 'prop-types'; // ES6
 import { ItemFriends } from './ItemFriends/ItemFriends'
 import css from './FriendList.module.css'
 
-// import { friendsShow } from './Utils/friendsShow'
 
 export const FriendList = ({ friends } ) => {
 

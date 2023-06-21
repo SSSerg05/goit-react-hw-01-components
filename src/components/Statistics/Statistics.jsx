@@ -2,8 +2,7 @@ import PropTypes from 'prop-types'; // ES6
 import { ItemStatistics } from './ItemStatistics/ItemStatistics';
 import css from './Statistics.module.css';
 
-export const Statistics = (props) => {
-  const { title, stats } = props;
+export const Statistics = ({ title, stats } ) => {
 
   return (
     <section className={css.statistics}>
