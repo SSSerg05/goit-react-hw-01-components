@@ -1,9 +1,7 @@
 import PropTypes from 'prop-types'; // ES6
 import css from "./TransactionHistory.module.css";
-import { transactionShow } from './Utils/transactionShow'
 
 export const TransactionHistory = ({ items }) => {
-
   return (
     <section className={css.transactions}>
       <table className={css.transactionHistory}>
@@ -16,7 +14,15 @@ export const TransactionHistory = ({ items }) => {
         </thead>
 
         <tbody>
-          { transactionShow(items) }
+          {
+            items.map( ({ id, type, amount, currency }) =>
+              <tr key={id} >
+                <td>{type}</td>
+                <td>{amount}</td>
+                <td>{currency}</td>
+              </tr>
+            ) 
+          }
         </tbody>
       </table>
     </section>
@@ -24,10 +30,12 @@ export const TransactionHistory = ({ items }) => {
 }
 
 TransactionHistory.propTypes = {
-  items: PropTypes.arrayOf(PropTypes.shape({
-    id: PropTypes.string.isRequired,
-    type: PropTypes.string.isRequired,
-    amount: PropTypes.string.isRequired,
-    currency: PropTypes.string.isRequired,
-  })),
+  items: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.string.isRequired,
+      type: PropTypes.string.isRequired,
+      amount: PropTypes.string.isRequired,
+      currency: PropTypes.string.isRequired,
+    }).isRequired
+  ).isRequired,
 }
